@@ -1,0 +1,152 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>cn.iponkan</groupId>
+  <artifactId>Spring-JPA</artifactId>
+  <packaging>war</packaging>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>Spring-JPA Maven Webapp</name>
+
+  <properties>
+  	<spring-version>4.3.7.RELEASE</spring-version>
+  	<hibernate-version>4.2.4.Final</hibernate-version>
+  	<jpa-version>1.0.1.Final</jpa-version>
+  	<c3p0-version>0.9.1.2</c3p0-version>
+  </properties>
+  
+  <dependencies>
+  
+  	<!-- spring-tx -->
+	<dependency>
+	    <groupId>org.springframework</groupId>
+	    <artifactId>spring-tx</artifactId>
+	    <version>${spring-version}</version>
+	</dependency>
+  
+    <!-- spring-aop -->
+	<dependency>
+	    <groupId>org.springframework</groupId>
+	    <artifactId>spring-aop</artifactId>
+	    <version>${spring-version}</version>
+	</dependency>
+  
+  	<!-- spring-test -->
+	<dependency>
+	    <groupId>org.springframework</groupId>
+	    <artifactId>spring-test</artifactId>
+	    <version>${spring-version}</version>
+	    <scope>test</scope>
+	</dependency>
+	
+  	<!-- spring-web -->
+	<dependency>
+	    <groupId>org.springframework</groupId>
+	    <artifactId>spring-web</artifactId>
+	    <version>${spring-version}</version>
+	</dependency>
+  
+  	<!-- spring-beans -->
+	<dependency>
+	    <groupId>org.springframework</groupId>
+	    <artifactId>spring-beans</artifactId>
+	    <version>${spring-version}</version>
+	</dependency>
+  
+  	<!-- spring-core -->
+	<dependency>
+	    <groupId>org.springframework</groupId>
+	    <artifactId>spring-core</artifactId>
+	    <version>${spring-version}</version>
+	</dependency>
+	
+  	<!-- spring-context -->
+	<dependency>
+	    <groupId>org.springframework</groupId>
+	    <artifactId>spring-context</artifactId>
+	    <version>${spring-version}</version>
+	</dependency>
+  	
+  	<!-- spring springmvc -->
+	<dependency>
+		<groupId>org.springframework</groupId>
+		<artifactId>spring-webmvc</artifactId>
+		<version>${spring-version}</version>
+	</dependency>
+  	
+  	<!-- spring 面向切面编程 -->
+	<dependency>
+		<groupId>org.springframework</groupId>
+		<artifactId>spring-aspects</artifactId>
+		<version>${spring-version}</version>
+	</dependency>
+	
+	<!-- spring jdbc -->
+	<dependency>
+		<groupId>org.springframework</groupId>
+		<artifactId>spring-jdbc</artifactId>
+		<version>${spring-version}</version>
+	</dependency>
+	
+	<!-- spring-orm -->
+	<dependency>
+		<groupId>org.springframework</groupId>
+		<artifactId>spring-orm</artifactId>
+		<version>${spring-version}</version>
+	</dependency>
+  
+    <!-- hibernate-core -->
+    <dependency>
+		<groupId>org.hibernate</groupId>
+		<artifactId>hibernate-core</artifactId>
+		<version>${hibernate-version}</version>
+	</dependency>
+	
+	<!-- hibernate-entitymanager -->
+	<dependency>
+		<groupId>org.hibernate</groupId>
+		<artifactId>hibernate-entitymanager</artifactId>
+		<version>${hibernate-version}</version>
+	</dependency>
+	
+	<!-- hibernate-c3p0 -->
+	<dependency>
+	    <groupId>org.hibernate</groupId>
+	    <artifactId>hibernate-c3p0</artifactId>
+	    <version>${hibernate-version}</version>
+	</dependency>
+	
+
+	<!-- hibernate-jpa-2.0-api -->
+	<dependency>
+		<groupId>org.hibernate.javax.persistence</groupId>
+		<artifactId>hibernate-jpa-2.0-api</artifactId>
+		<version>${jpa-version}</version>
+	</dependency>
+	
+	
+  	<!-- 数据库连接池c3p0 -->
+	<dependency>
+		<groupId>c3p0</groupId>
+		<artifactId>c3p0</artifactId>
+		<version>${c3p0-version}</version>
+	</dependency>
+	
+	<!-- mysql数据库连接驱动 -->
+	<dependency>
+		<groupId>mysql</groupId>
+		<artifactId>mysql-connector-java</artifactId>
+		<version>5.1.41</version>
+	</dependency>
+	
+	<!-- 单元测试 -->
+    <dependency>
+		<groupId>junit</groupId>
+		<artifactId>junit</artifactId>
+		<version>4.12</version>
+		<scope>test</scope>
+	</dependency>
+  </dependencies>
+  <build>
+    <finalName>Spring-JPA</finalName>
+  </build>
+</project>
